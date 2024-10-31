@@ -8,6 +8,26 @@ app_license = "mit"
 # Apps
 # ------------------
 
+fixtures = [
+    {
+        "doctype": "Print Format", 
+        "filters": [
+            ["name", "in", ["Bot Format J", "Bot Format N","Bot Format S","Bot Format H","Bot Format B","Bot Format B Q","Bot Format HE"]]
+        ]
+    },
+    {
+        "doctype": "DocType",
+        "filters": [
+            ["name", "=", "Sales Invoice"]
+        ]
+    },
+    {
+        "doctype": "DocType",
+        "filters": [["name", "=", "Company"]]
+    }
+]
+
+
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
